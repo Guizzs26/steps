@@ -1,0 +1,8 @@
+.appContainer {
+  width: 100%;
+  max-width: 80rem;
+
+  padding: 1.8rem 3.6rem;
+
+  background-color: #edf2ff;
+}
