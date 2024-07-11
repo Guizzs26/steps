@@ -1,6 +1,8 @@
 import styles from "./steps.module.css";
 import { useState } from "react";
 
+import { Button } from "../Button";
+
 import { messages } from "../../data/messagesData";
 
 export function Steps() {
@@ -44,18 +46,21 @@ export function Steps() {
             </p>
 
             <div className={styles.buttons}>
-              <button
-                style={{ backgroundColor: "#7950f2", color: "#fff" }}
+              <Button
+                color="#fff"
+                backgroundColor="#7950f2"
                 onClick={handlePrevious}
               >
-                Previous
-              </button>
-              <button
-                style={{ backgroundColor: "#7950f2", color: "#fff" }}
+                👈 Previous
+              </Button>
+
+              <Button
+                color="#fff"
+                backgroundColor="#7950f2"
                 onClick={handleNext}
               >
-                Next
-              </button>
+                Next 👉
+              </Button>
             </div>
           </div>
         </>
